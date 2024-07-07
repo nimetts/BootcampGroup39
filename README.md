@@ -28,3 +28,34 @@ Her harita, kendine özgü zorluklar ve stratejiler gerektirirken, güçlendiric
 •	Çeşitli haritalar <br/>
 ## Hedef Kitle
 Explosive Adventure çocuklar, retro oyun severler gibi geniş bir hedef kitleye hitap eden, basit oynanışı ve renkli grafikleri seven herkesin oynayacağı bir oyundur.
+# SPRINT 1
+* Sprint içi puan değerlendirmesi 70 olarak belirlenmiştir.
+* **Puanlama:** Proje boyunca tamamlanması gereken toplam backlog puanı 300'dür. İlk sprint için hedeflenen tamamlanacak puan sayısı 70 olup, bu hedef başarıyla gerçekleştirilmiştir.
+* **Daily Scrum:** Görüşmeler, Whatsapp ve Discord üzerinden yapılmıştır.
+## Toplantı ve Whatsapp ScreenShotları
+https://imgur.com/a/UlnOAdx
+##  Sprint Board Screenshotı
+https://imgur.com/a/uBmShQN
+## Karakter Tasarımı
+https://imgur.com/a/b6VHH2F
+# Sprint Review
+## Sprint süresince tamamlanan görevler:
+1. Hareket scripti yazıldı: Karakterlerin temel hareketlerini kontrol eden script başarıyla tamamlandı ve test edildi.
+2. 1 karakter görünümü tasarlandı: Oyunda kullanılacak karakterlerden biri için görsel tasarım tamamlandı ve onaylandı.
+3. Düşman hareketi scripti yazıldı: Düşman karakterlerin hareketlerini kontrol eden script yazıldı ve entegrasyon testleri yapıldı.
+Toplamda 70 puanlık iş tamamlandı. Diğer görevler üzerinde çalışmalar devam ediyor.
+# Sprint Retrospective
+## Neler iyi gitti?
+* Görevler planlandığı gibi ve zamanında tamamlandı.
+* Takım içinde iletişim ve iş birliği oldukça iyiydi.
+* Yazılan scriptler ve tasarımlar testlerde başarılı sonuçlar verdi.
+## Neler geliştirilebilir?
+* Devam eden görevlerde bazen gecikmeler yaşandı; bu konuda daha sıkı takip ve raporlama yapılmalı.
+* Önceliklendirme ve zaman yönetimi konusunda daha dikkatli olunmalı.
+* Daha net bir planlama yapılarak yapılacak işler ve sorumluluklar daha açık bir şekilde belirlenmeli.
+## Aksiyon maddeleri
+* Devam eden görevlerin daha sıkı takip edilmesi için günlük stand-up toplantıları yapılacak.
+* Önceliklendirme ve zaman yönetimi konusunda eğitim ve rehberlik sağlanacak.
+* Her görevin net bir şekilde tanımlandığından ve sorumlulukların belirlendiğinden emin olunacak.
+
+  
