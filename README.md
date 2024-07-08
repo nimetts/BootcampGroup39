@@ -57,5 +57,12 @@ Toplamda 70 puanlık iş tamamlandı. Diğer görevler üzerinde çalışmalar d
 * Devam eden görevlerin daha sıkı takip edilmesi için günlük stand-up toplantıları yapılacak.
 * Önceliklendirme ve zaman yönetimi konusunda eğitim ve rehberlik sağlanacak.
 * Her görevin net bir şekilde tanımlandığından ve sorumlulukların belirlendiğinden emin olunacak.
+## Sprint Notları
+* Proje yönetimi için Trello kullanılmasına karar verildi.
+* Unity versiyonu için 2022.3.25f1 kullanılmasına karar verildi.
+* Karakter tasarımlarının pixel art olmasına karar verildi.
+* Daily scrum ekran görüntülerinin ve sprint board görüntüsünün paylaşımı için imgur kullanılmasına karar verildi.
+* Oyun içindeki düşman karakterleri ve arka plan tilesheetleri tamamlanmamıştır.
+* Diğer sprint sahne kurulumuna ağırlık verilmesine karar verilmiştir.
 
   
