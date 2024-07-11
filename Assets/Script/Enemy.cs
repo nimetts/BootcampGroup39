@@ -80,7 +80,7 @@ public class Enemy : MonoBehaviour
     public void hasarVerme(GameObject player){
         var atm = player.GetComponent<CADI>();
         if(atm!= null ){
-            atm.TakeDamage(attack);
+            //atm.TakeDamage(attack); cadı.cs düzenlendiği için hata veriyor
             //atm.Speedslow();//yavaşlam etkisi
         }
     }
