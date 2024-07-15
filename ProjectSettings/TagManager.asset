@@ -11,16 +11,16 @@ TagManager:
   - 
   - Water
   - UI
-  - Background
-  - Foreground
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Solid
+  - SolidOnTop
+  - SolidOnBottom
+  - SolidOnLeft
+  - SolidOnRight
+  - NonSolidTile
+  - Weapon
+  - Actor
   - 
   - 
   - 
@@ -40,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 2679522183
-    locked: 0
-  - name: Foreground
-    uniqueID: 2231648657
     locked: 0
