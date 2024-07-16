@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour 
 {
@@ -30,13 +31,13 @@ public class CharacterController : MonoBehaviour
         transform.Translate(movement * speed * Time.deltaTime);
 
         // Silah kullanımı
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("E"))
         {
             Shoot();
         }
 
         // Yakın dövüşte bıçak kullanımı
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Mouse1"))
         {
             UseKnife();
         }
