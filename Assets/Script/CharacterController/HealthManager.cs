@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    public int startingHealth = 3; // Baþlangýçtaki caný
-    private int currentHealth; // Þu anki caný
+    public int startingHealth = 3; // Baï¿½langï¿½ï¿½taki canï¿½
+    [SerializeField]private int currentHealth; // ï¿½u anki canï¿½
 
-    // Özellikler
+    // ï¿½zellikler
     public bool canReflectDamage = false;
     public bool canAbsorbDamage = false;
 
@@ -18,10 +18,10 @@ public class HealthManager : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        // Hasar alma iþlemi
+        // Hasar alma iï¿½lemi
         if (canReflectDamage)
         {
-            // Hasarýn %10'unu geri yansýt
+            // Hasarï¿½n %10'unu geri yansï¿½t
             int reflectedDamage = Mathf.RoundToInt(damageAmount * 0.1f);
             currentHealth -= damageAmount - reflectedDamage;
         }
@@ -38,13 +38,13 @@ public class HealthManager : MonoBehaviour
 
     void Die()
     {
-        // Karakterin ölüm iþlemleri
-        gameObject.SetActive(false); // veya baþka bir ölüm animasyonu veya efekti oynatýlabilir
+        // Karakterin ï¿½lï¿½m iï¿½lemleri
+        gameObject.SetActive(false); // veya baï¿½ka bir ï¿½lï¿½m animasyonu veya efekti oynatï¿½labilir
     }
 
     public void AbsorbDamageFromFriend(GameObject friend)
     {
-        // Arkadaþýn aldýðý hasarýn %25'ini absorbe etme
+        // Arkadaï¿½ï¿½n aldï¿½ï¿½ï¿½ hasarï¿½n %25'ini absorbe etme
         /*CharacterController3 friendController = friend.GetComponent<CharacterController3>();
         if (friendController != null)
         {

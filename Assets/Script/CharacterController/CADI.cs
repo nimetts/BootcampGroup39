@@ -9,6 +9,7 @@ public class CADI : MonoBehaviour
 
     private Rigidbody2D rb; // Rigidbody2D bileşeni
     private float moveDirection = 0f; // Hareket yönü
+    private float moveDirectionY = 0f; // Hareket yönü
 
     // Animasyon ve sprite bileşenleri
     private Animator _animator;
@@ -26,6 +27,7 @@ public class CADI : MonoBehaviour
         // Yürüme veya koşma hareketi
         float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
         moveDirection = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        moveDirectionY = Input.GetAxisRaw("Vertical") * moveSpeed;
 
         // Sprite flip işlemi
         if (moveDirection < 0)
@@ -44,7 +46,7 @@ public class CADI : MonoBehaviour
     void FixedUpdate()
     {
         // Hareketi uygula
-        rb.velocity = new Vector2(moveDirection, rb.velocity.y);
+        rb.velocity = new Vector2(moveDirection,moveDirectionY);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

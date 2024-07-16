@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class SHOOTER : MonoBehaviour
 {
-    public float speed = 5f; // Hızı
+    public float walkSpeed = 5f; // Yürüme hızı
+    public float runSpeed = 10f; // Koşma hızı
 
     private Rigidbody2D rb; // Rigidbody2D bileşeni
-    private Animator _animator; // Animator bileşeni
-    private SpriteRenderer _spriteRenderer; // SpriteRenderer bileşeni
     private float moveDirection = 0f; // Hareket yönü
+    private float moveDirectionY = 0f; // Hareket yönü
+
+    // Animasyon ve sprite bileşenleri
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
@@ -20,30 +24,29 @@ public class SHOOTER : MonoBehaviour
 
     void Update()
     {
-        // Hareket kontrolü
-        if (Input.GetKey(KeyCode.A))
+        // Yürüme veya koşma hareketi
+        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        moveDirection = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        moveDirectionY = Input.GetAxisRaw("Vertical") * moveSpeed;
+
+        // Sprite flip işlemi
+        if (moveDirection < 0)
         {
-            moveDirection = -1.0f;
             _spriteRenderer.flipX = true;
-            _animator.SetFloat("speed", speed);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (moveDirection > 0)
         {
-            moveDirection = 1.0f;
             _spriteRenderer.flipX = false;
-            _animator.SetFloat("speed", speed);
         }
-        else
-        {
-            moveDirection = 0.0f;
-            _animator.SetFloat("speed", 0.0f);
-        }
+
+        // Animasyon kontrolü
+        _animator.SetFloat("speed", Mathf.Abs(moveDirection));
     }
 
     void FixedUpdate()
     {
         // Hareketi uygula
-        rb.velocity = new Vector2(moveDirection * speed, rb.velocity.y);
+        rb.velocity = new Vector2(moveDirection,moveDirectionY);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

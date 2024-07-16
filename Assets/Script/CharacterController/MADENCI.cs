@@ -5,50 +5,48 @@ using UnityEngine;
 public class MADENCI : MonoBehaviour
 {
     public float walkSpeed = 5f; // Yürüme hızı
-    public float runSpeed = 8f; // Koşma hızı
+    public float runSpeed = 10f; // Koşma hızı
 
     private Rigidbody2D rb; // Rigidbody2D bileşeni
-    private Animator animator; // Animator bileşeni
-    private SpriteRenderer spriteRenderer; // SpriteRenderer bileşeni
+    private float moveDirection = 0f; // Hareket yönü
+    private float moveDirectionY = 0f; // Hareket yönü
 
-    private bool isRunning = false; // Koşma durumu
+    // Animasyon ve sprite bileşenleri
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Rigidbody2D bileşenini al
-        animator = GetComponent<Animator>(); // Animator bileşenini al
-        spriteRenderer = GetComponent<SpriteRenderer>(); // SpriteRenderer bileşenini al
+        _animator = GetComponent<Animator>(); // Animator bileşenini al
+        _spriteRenderer = GetComponent<SpriteRenderer>(); // SpriteRenderer bileşenini al
     }
 
     void Update()
     {
-        // Koşma kontrolü
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        // Yürüme veya koşma hareketi
+        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        moveDirection = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        moveDirectionY = Input.GetAxisRaw("Vertical") * moveSpeed;
+
+        // Sprite flip işlemi
+        if (moveDirection < 0)
         {
-            isRunning = true;
+            _spriteRenderer.flipX = true;
         }
-        else
+        else if (moveDirection > 0)
         {
-            isRunning = false;
+            _spriteRenderer.flipX = false;
         }
 
-        // Karakterin hareketi
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveSpeed = isRunning ? runSpeed : walkSpeed; // Koşma durumuna göre hareket hızı
-        rb.velocity = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y); // Yatay hareket
+        // Animasyon kontrolü
+        _animator.SetFloat("speed", Mathf.Abs(moveDirection));
+    }
 
-        // Karakterin sprite'ını gittiği yöne göre flip işlemi
-        if (moveHorizontal < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (moveHorizontal > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-
-        // Koşma animasyonunu kontrol et
-        animator.SetFloat("speed", Mathf.Abs(moveHorizontal));
+    void FixedUpdate()
+    {
+        // Hareketi uygula
+        rb.velocity = new Vector2(moveDirection,moveDirectionY);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +54,7 @@ public class MADENCI : MonoBehaviour
         // Yere temas kontrolü
         if (collision.contacts[0].normal.y > 0.5)
         {
-            animator.SetBool("grounded", true);
+            _animator.SetBool("grounded", true);
         }
     }
 }
