@@ -81478,6 +81478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
+    - target: {fileID: 2431417534230779889, guid: 9c6c1a4446be6dc4fa453dd6c8785917,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3889338791791002032, guid: 9c6c1a4446be6dc4fa453dd6c8785917,
         type: 3}
       propertyPath: m_LocalPosition.x
