@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="940fd510-d8fe-4d25-b15e-3fc1b82e181d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BootcampGroup39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BootcampGroup39/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/RestaurantScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/RestaurantScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Apple.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Apple.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Banana.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Banana.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Orange.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Strawberry.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Strawberry.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Watermelon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/Restaurant_Collectibles/Fruits/Watermelon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-    </list>
+    <list default="true" id="940fd510-d8fe-4d25-b15e-3fc1b82e181d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +94,7 @@
       <updated>1720694240967</updated>
       <workItem from="1720694241609" duration="31000" />
       <workItem from="1720694324425" duration="80000" />
-      <workItem from="1721163227121" duration="1593000" />
+      <workItem from="1721163227121" duration="2186000" />
     </task>
     <servers />
   </component>
