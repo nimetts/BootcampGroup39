@@ -65,4 +65,22 @@ Toplamda 70 puanlık iş tamamlandı. Diğer görevler üzerinde çalışmalar d
 * Oyun içindeki düşman karakterleri ve arka plan tilesheetleri tamamlanmamıştır.
 * Diğer sprint sahne kurulumuna ağırlık verilmesine karar verilmiştir.
 
+# SPRINT 2
+* Sprint içi puan değerlendirmesi 130 olarak belirlenmiştir.
+* **Puanlama:** İkinci sprint için hedeflenen tamamlanacak puan sayısı 130 olup, bu hedef başarıyla gerçekleştirilmiştir.
+* **Daily Scrum:** Görüşmeler, Whatsapp ve Discord üzerinden yapılmıştır.
+## Sprint Board Update
+https://imgur.com/a/lTyODTs
+## Toplantı ve Whatsapp ScreenShotları
+https://imgur.com/a/a5kyUFc
+## Oyun içi sahneler
+https://imgur.com/a/gNAKHOw
+## Oyundaki karakterler
+https://imgur.com/a/Usr2wQD
+## Sprint Review
+Karakterler için hazır sprite sheets kullanılması değerlendirilip, her bir karakterin chibi formunda olmasına karar verilmiştir. Kazanma ve kaybetme ekranlarının nasıl olacağını konuşulup,değerlendirilmiştir.
+## Sprint Retrospective
+Her bir takım üyesinin sahnelerdeki eksiklikleri tamamlamasına karar verilmiştir.
+
+
   
