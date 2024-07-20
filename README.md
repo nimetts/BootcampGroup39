@@ -70,7 +70,7 @@ Toplamda 70 puanlık iş tamamlandı. Diğer görevler üzerinde çalışmalar d
 * **Puanlama:** İkinci sprint için hedeflenen tamamlanacak puan sayısı 130 olup, bu hedef başarıyla gerçekleştirilmiştir.
 * **Daily Scrum:** Görüşmeler, Whatsapp ve Discord üzerinden yapılmıştır.
 ## Sprint Board Update
-https://imgur.com/a/lTyODTs
+https://imgur.com/a/nt61EPb
 ## Toplantı ve Whatsapp ScreenShotları
 https://imgur.com/a/a5kyUFc
 ## Oyun içi sahneler
