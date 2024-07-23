@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class Effect : ScriptableObject
 {
-   public string effectN;
-   public int  Amount;
-   public float  TickSpeed;
+   public int    health;
    public float  Movements;
    public float  lifetTime;
 }

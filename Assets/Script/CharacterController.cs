@@ -80,7 +80,7 @@ public class CharacterController : MonoBehaviour
         gameObject.SetActive(false); // veya başka bir ölüm animasyonu veya efekti oynatılabilir
     }
 
-    
+    /*
     public void ApplyE(Effect _data)
     {
         this._data=_data;
@@ -100,6 +100,6 @@ public class CharacterController : MonoBehaviour
             lastTick += _data.TickSpeed;
             currentHealth -= _data.Amount;
         }
-    }
+    }*/
 
 }
