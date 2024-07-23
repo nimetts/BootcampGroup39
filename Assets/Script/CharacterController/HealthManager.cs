@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    public int startingHealth = 3; // Ba�lang��taki can�
-    [SerializeField]private int currentHealth; // �u anki can�
+    [SerializeField]private int startingHealth = 3; // Ba�lang��taki can�
+    public int currentHealth; // �u anki can�
 
     // �zellikler
     public bool canReflectDamage = false;

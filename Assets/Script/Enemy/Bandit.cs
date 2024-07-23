@@ -30,7 +30,7 @@ public class Bandit : MonoBehaviour
         #endregion saldiri
     }
     private void DealDamage(GameObject player){
-        var atm = player.GetComponent<CharacterController>();
+        var atm = player.GetComponent<HealthManager>();
         if(atm!= null){
             atm.TakeDamage(enemy.attack);
         }
