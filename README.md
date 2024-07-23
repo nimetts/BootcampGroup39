@@ -81,6 +81,11 @@ https://imgur.com/a/Usr2wQD
 Karakterler için hazır sprite sheets kullanılması değerlendirilip, her bir karakterin chibi formunda olmasına karar verilmiştir. Kazanma ve kaybetme ekranlarının nasıl olacağını konuşulup,değerlendirilmiştir.
 ## Sprint Retrospective
 Her bir takım üyesinin sahnelerdeki eksiklikleri tamamlamasına karar verilmiştir.
+## Sprint Notları
+* Çöl sahnesi yerine uzay sahnesi yapılmasına karar verilmiştir.
+* Oyun içi müzikler son sprite bırakılmasına karar verildi.
+* Karakter ve düşman animasyonlarının üzerine daha çok yoğunlaşılması gerektiğine karar verildi.
+
 
 
   
