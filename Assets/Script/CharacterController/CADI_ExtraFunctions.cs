@@ -10,19 +10,18 @@ public class CADI_ExtraFunctions : MonoBehaviour
 
     void Start()
     {
-       
-        _animator = GetComponent<Animator>(); // Animator bileþenini al
+        _animator = GetComponent<Animator>(); // Animator bileï¿½enini al
     }
 
     void Update()
     {
-        // Silah kullanýmý
+        // Silah kullanï¿½mï¿½
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
 
-        // Býçak kullanýmý
+        // Bï¿½ï¿½ak kullanï¿½mï¿½
         if (Input.GetButtonDown("Fire2"))
         {
             UseKnife();
@@ -31,22 +30,22 @@ public class CADI_ExtraFunctions : MonoBehaviour
 
     void Shoot()
     {
-        // Silah kullanýmý için kod
-        // Örneðin:
+        // Silah kullanï¿½mï¿½ iï¿½in kod
+        // ï¿½rneï¿½in:
         // Instantiate(bulletPrefab, weaponTransform.position, weaponTransform.rotation);
     }
 
     void UseKnife()
     {
-        // Býçak kullanýmý için kod
-        // Örneðin:
+        // Bï¿½ï¿½ak kullanï¿½mï¿½ iï¿½in kod
+        // ï¿½rneï¿½in:
         // RaycastHit2D hit = Physics2D.Raycast(knifeTransform.position, knifeTransform.right);
         // if (hit.collider != null)
         // {
         //     EnemyController enemy = hit.collider.GetComponent<EnemyController>();
         //     if (enemy != null)
         //     {
-        //         enemy.TakeDamage(999); // Tek vuruþta öldürmek için yüksek hasar verme
+        //         enemy.TakeDamage(999); // Tek vuruï¿½ta ï¿½ldï¿½rmek iï¿½in yï¿½ksek hasar verme
         //     }
         // }
     }

@@ -20,8 +20,9 @@ public class toplama : MonoBehaviour
             }
             if (0!=_data.Movements)
             {
-                var Pspeed = other.gameObject.GetComponent<CharacterController>();
-                Pspeed.speed += _data.Movements;
+                var Pspeed = other.gameObject.GetComponent<HealthManager>();
+                Pspeed.walkSpeed += _data.Movements;
+                Pspeed.runSpeed += _data.Movements;
             }
             Destroy(this.gameObject);
         }   

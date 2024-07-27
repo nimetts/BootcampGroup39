@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: can
   m_EditorClassIdentifier: 
   health: 2
-  Movements: 0
+  Movements: 3
   lifetTime: 0

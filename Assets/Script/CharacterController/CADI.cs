@@ -4,58 +4,49 @@ using UnityEngine;
 
 public class CADI : MonoBehaviour
 {
-    public float walkSpeed = 5f; // Yürüme hızı
-    public float runSpeed = 10f; // Koşma hızı
-
-    private Rigidbody2D rb; // Rigidbody2D bileşeni
-    private float moveDirection = 0f; // Hareket yönü
-    private float moveDirectionY = 0f; // Hareket yönü
-
-    // Animasyon ve sprite bileşenleri
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+    private Transform _transform;
+    private Rigidbody2D rb;
+    private HealthManager status;
+    
+    private float moveDirection = 0f; // Hareket yönü
+    private float moveDirectionY = 0f; // Hareket yönü
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Rigidbody2D bileşenini al
         _animator = GetComponent<Animator>(); // Animator bileşenini al
+        _transform = GetComponent<Transform>(); // Animator bileşenini al
         _spriteRenderer = GetComponent<SpriteRenderer>(); // SpriteRenderer bileşenini al
+        status = GetComponent<HealthManager>();
     }
 
     void Update()
     {
         // Yürüme veya koşma hareketi
-        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? status.runSpeed : status.walkSpeed;
         moveDirection = Input.GetAxisRaw("Horizontal") * moveSpeed;
         moveDirectionY = Input.GetAxisRaw("Vertical") * moveSpeed;
 
-        // Sprite flip işlemi
-        if (moveDirection < 0)
-        {
-            _spriteRenderer.flipX = true;
-        }
-        else if (moveDirection > 0)
-        {
-            _spriteRenderer.flipX = false;
-        }
+        
 
         // Animasyon kontrolü
         _animator.SetFloat("speed", Mathf.Abs(moveDirection));
     }
 
     void FixedUpdate()
-    {
+    {// Sprite flip işlemi
+        if (moveDirection < 0)
+        {
+            _transform.Rotate(0f,0f,180f);
+        }
+        else if (moveDirection > 0)
+        {
+           _transform.Rotate(0f,0f,0f);
+        }
         // Hareketi uygula
         rb.velocity = new Vector2(moveDirection,moveDirectionY);
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Yere temas kontrolü
-        if (collision.contacts[0].normal.y > 0.5)
-        {
-            _animator.SetBool("grounded", true);
-        }
     }
 }
 

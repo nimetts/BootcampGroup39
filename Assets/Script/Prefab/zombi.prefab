@@ -117,16 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb4ddf4d4b869c4899564a81392b73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   speed: 2
   health: 2
   currentHealth: 0
   attack: 1
   attackSpeed: 2.5
   Isattack: 0
-  distanceF: 20
-  distance: 0
-  nearest: 2000
 --- !u!58 &1291258196410901260
 CircleCollider2D:
   m_ObjectHideFlags: 0

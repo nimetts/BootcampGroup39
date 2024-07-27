@@ -4,28 +4,26 @@ using UnityEngine;
 
 public class MADENCI : MonoBehaviour
 {
-    public float walkSpeed = 5f; // Yürüme hızı
-    public float runSpeed = 10f; // Koşma hızı
-
-    private Rigidbody2D rb; // Rigidbody2D bileşeni
+   private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+    private Rigidbody2D rb;
+    private HealthManager status;
+    
     private float moveDirection = 0f; // Hareket yönü
     private float moveDirectionY = 0f; // Hareket yönü
-
-    // Animasyon ve sprite bileşenleri
-    private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Rigidbody2D bileşenini al
         _animator = GetComponent<Animator>(); // Animator bileşenini al
         _spriteRenderer = GetComponent<SpriteRenderer>(); // SpriteRenderer bileşenini al
+        status = GetComponent<HealthManager>();
     }
 
     void Update()
     {
         // Yürüme veya koşma hareketi
-        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? status.runSpeed : status.walkSpeed;
         moveDirection = Input.GetAxisRaw("Horizontal") * moveSpeed;
         moveDirectionY = Input.GetAxisRaw("Vertical") * moveSpeed;
 
@@ -47,14 +45,5 @@ public class MADENCI : MonoBehaviour
     {
         // Hareketi uygula
         rb.velocity = new Vector2(moveDirection,moveDirectionY);
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Yere temas kontrolü
-        if (collision.contacts[0].normal.y > 0.5)
-        {
-            _animator.SetBool("grounded", true);
-        }
     }
 }
