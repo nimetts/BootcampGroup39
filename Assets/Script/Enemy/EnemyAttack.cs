@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bandit : MonoBehaviour
+public class EnemyAttack : MonoBehaviour
 {
     private EnemyStatus enemy;//özeliklerin olduğu script
     private float ColTimer = Mathf.Infinity;
     private GameObject hedef;
     
+    
     void Start()
     {
         enemy = GetComponent<EnemyStatus>();
     }
-
-    void Update()
-    {
+    void FixedUpdate() {
        ColTimer += Time.deltaTime;
        #region saldiri
             if(enemy.Isattack){
@@ -36,36 +35,13 @@ public class Bandit : MonoBehaviour
         }
     }
     void OnCollisionEnter2D(Collision2D other) {
-        enemy.Isattack=true;
-        hedef=other.gameObject;
+        if(other.gameObject.tag=="Player"){
+            enemy.Isattack=true;
+            hedef=other.gameObject;
+        }
     }
     void OnCollisionExit2D(Collision2D other) {
         enemy.Isattack=false;
         hedef=null;
     }
-
-   /*
-   #region effect
-        public void ApplyE(Effect _data)
-        {
-            this._data=_data;
-            
-        }
-        public void RemoveE()
-        {
-            _data=null;
-        }
-        public void HandleE()
-        {
-            curEffect += Time.deltaTime;
-        if(curEffect>= _data.lifetTime){
-            RemoveE();
-        }
-        if(_data.Movements !=0 && curEffect > lastTick ){
-            lastTick += _data.TickSpeed;
-            currentHealth -= _data.Amount;
-        }
-            
-        }
-    #endregion effect*/
 }

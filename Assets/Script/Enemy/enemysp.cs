@@ -8,14 +8,17 @@ public class enemysp : MonoBehaviour
 
    public float say;
    public float tekrar;
-
+   public bool active=false;
+   
     void Update() {
         say += Time.deltaTime;
-        if(say>tekrar){
-            int randomIndex = Random.Range(0,_gameObject.Length);
-            Vector2 randomSposition = new Vector2(Random.Range(-10,10),Random.Range(-10,10));
-            Instantiate(_gameObject[randomIndex],randomSposition,Quaternion.identity);
-            say=0;
+        if(active){
+            if(say>tekrar){
+                int randomIndex = Random.Range(0,_gameObject.Length);
+                Vector2 randomSposition = new Vector2(Random.Range(-10,10),Random.Range(-10,10));
+                Instantiate(_gameObject[randomIndex],randomSposition,Quaternion.identity);
+                say=0;
+            }
         }
     }
 }
