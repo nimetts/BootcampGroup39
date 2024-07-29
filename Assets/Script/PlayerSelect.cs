@@ -8,7 +8,7 @@ public class CharacterSelection : MonoBehaviour
     public Button character3Button;
     public Button character4Button;
 
-    void Start()
+    public void Start()
     {
         character1Button.onClick.AddListener(() => SelectCharacter(1));
         character2Button.onClick.AddListener(() => SelectCharacter(2));
@@ -16,10 +16,29 @@ public class CharacterSelection : MonoBehaviour
         character4Button.onClick.AddListener(() => SelectCharacter(4));
     }
 
-    void SelectCharacter(int characterIndex)
+    public void SelectCharacter(int characterIndex)
     {
         PlayerPrefs.SetInt("SelectedCharacter", characterIndex);
         PlayerPrefs.Save();
         Debug.Log("Character " + characterIndex + " selected and saved.");
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SelectCharacter(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SelectCharacter(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SelectCharacter(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SelectCharacter(4);
+        }
     }
 }
