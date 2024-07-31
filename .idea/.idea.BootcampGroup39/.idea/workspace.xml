@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="940fd510-d8fe-4d25-b15e-3fc1b82e181d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BootcampGroup39/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BootcampGroup39/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Fallen Angel/Fallen_Angels_3/PNG/PNG Sequences/Idle/0_Fallen_Angels_Idle_000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Fallen Angel/Fallen_Angels_3/PNG/PNG Sequences/Idle/0_Fallen_Angels_Idle_000.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/RestaurantScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/RestaurantScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapChoose.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapChoose.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +108,7 @@
       <workItem from="1722280739965" duration="14000" />
       <workItem from="1722280953771" duration="4000" />
       <workItem from="1722281038361" duration="2088000" />
+      <workItem from="1722455070730" duration="750000" />
     </task>
     <servers />
   </component>
