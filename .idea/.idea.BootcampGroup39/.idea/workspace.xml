@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="940fd510-d8fe-4d25-b15e-3fc1b82e181d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Restaurant/RestaurantScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Restaurant/RestaurantScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapChoose.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapChoose.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-    </list>
+    <list default="true" id="940fd510-d8fe-4d25-b15e-3fc1b82e181d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +104,7 @@
       <workItem from="1722280739965" duration="14000" />
       <workItem from="1722280953771" duration="4000" />
       <workItem from="1722281038361" duration="2088000" />
-      <workItem from="1722455070730" duration="750000" />
+      <workItem from="1722455070730" duration="1277000" />
     </task>
     <servers />
   </component>

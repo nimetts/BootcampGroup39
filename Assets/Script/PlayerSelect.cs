@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -27,14 +28,17 @@ public class CharacterSelection : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SelectCharacter(1);
+            SceneManager.LoadScene("MapChoose");
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SelectCharacter(2);
+            SceneManager.LoadScene("MapChoose");
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SelectCharacter(3);
+            SceneManager.LoadScene("MapChoose");
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
