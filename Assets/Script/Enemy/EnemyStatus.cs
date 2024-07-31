@@ -14,10 +14,10 @@ public class EnemyStatus : MonoBehaviour
         public int currentHealth;
         public int attack;
         public float attackSpeed;
+
         public bool Isattack=false;
-    [Header ("animasyon")]
-        public bool Ismove=false;
-        public bool Ishurt=false;
+        private bool Ismove=false;
+        private bool Ishurt=false;
         private Animator _anim;
     
     void Start()

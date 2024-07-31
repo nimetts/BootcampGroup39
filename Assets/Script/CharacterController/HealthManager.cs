@@ -6,7 +6,8 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField]private int startingHealth; // Ba�lang��taki can�
     public int currentHealth; // �u anki can�
-    public bool deneme=true;
+    public bool Ishit=false;
+    public bool Isdie=false;
     // �zellikler
     public float walkSpeed; // Yürüme hızı
     public float runSpeed; // Koşma hızı
@@ -15,18 +16,13 @@ public class HealthManager : MonoBehaviour
     {
         currentHealth = startingHealth;
     }
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
-    void Update()
-    {
-        gameObject.SetActive(deneme);
-    }
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
+        Ishit=true;
         if (currentHealth <= 0)
         {
+            Ishit=true;
             Die();
         }
     }

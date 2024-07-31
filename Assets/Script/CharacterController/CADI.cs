@@ -4,49 +4,62 @@ using UnityEngine;
 
 public class CADI : MonoBehaviour
 {
-    private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
-    private Transform _transform;
-    private Rigidbody2D rb;
-    private HealthManager status;
-    
-    private float moveDirection = 0f; // Hareket yönü
-    private float moveDirectionY = 0f; // Hareket yönü
+    public bool CantAttack = false;
+    public float AttackSpeed=0.3f;
+    public float Attack=2;
+    private Transform child;
+    private Animator _anim;
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>(); // Rigidbody2D bileşenini al
-        _animator = GetComponent<Animator>(); // Animator bileşenini al
-        _transform = GetComponent<Transform>(); // Animator bileşenini al
-        _spriteRenderer = GetComponent<SpriteRenderer>(); // SpriteRenderer bileşenini al
-        status = GetComponent<HealthManager>();
+    void Start() {
+        child = GetComponentInChildren<Transform>();
+        _anim = GetComponentInChildren<Animator>();
     }
-
     void Update()
     {
-        // Yürüme veya koşma hareketi
-        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? status.runSpeed : status.walkSpeed;
-        moveDirection = Input.GetAxisRaw("Horizontal") * moveSpeed;
-        moveDirectionY = Input.GetAxisRaw("Vertical") * moveSpeed;
+        // Silah kullan�m�
+        if (Input.GetButtonDown("RightAnalogClick"))
+        {
+            Shoot();
+        }
 
-        
-
-        // Animasyon kontrolü
-        _animator.SetFloat("speed", Mathf.Abs(moveDirection));
+        // B��ak kullan�m�
+        if (Input.GetButtonDown("LeftAnalogClick"))
+        {
+            UseKnife();
+        }
     }
 
-    void FixedUpdate()
-    {// Sprite flip işlemi
-        if (moveDirection < 0)
-        {
-            _transform.Rotate(0f,0f,180f);
-        }
-        else if (moveDirection > 0)
-        {
-           _transform.Rotate(0f,0f,0f);
-        }
-        // Hareketi uygula
-        rb.velocity = new Vector2(moveDirection,moveDirectionY);
+    void Shoot()
+    {
+        // Silah kullan�m� i�in kod
+        // �rne�in:
+        // Instantiate(bulletPrefab, weaponTransform.position, weaponTransform.rotation);
     }
+
+    public void UseKnife()
+    {
+        if (CantAttack)
+            return;
+        _anim.SetBool("Isattack",true);
+        CantAttack = true;
+        StartCoroutine(DelayAttack());
+    }
+
+    private IEnumerator DelayAttack()
+    {
+        yield return new WaitForSeconds(AttackSpeed);
+        foreach (Collider2D collider in Physics2D.OverlapCircleAll(child.transform.position,Attack))
+        {
+            //Debug.Log(collider.name);
+            EnemyStatus health;
+            if(health = collider.GetComponent<EnemyStatus>())
+            {
+                health.TakeDamage(1);
+            }
+        }
+        CantAttack = false;
+        _anim.SetBool("Isattack",false);
+    }
+
 }
 
