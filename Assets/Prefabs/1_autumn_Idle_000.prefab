@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6042448826769472020}
   - component: {fileID: 7884618780814330325}
   - component: {fileID: -3099235635791532890}
-  - component: {fileID: 3795596263908214660}
   - component: {fileID: 2884480849775196999}
   - component: {fileID: 8277167046941461966}
   - component: {fileID: 3843111928163311730}
@@ -129,18 +128,6 @@ MonoBehaviour:
   Isdie: 0
   walkSpeed: 5
   runSpeed: 6
---- !u!114 &3795596263908214660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4894251677589259189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3420a9b9f12c6124f907386079a6cec3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2884480849775196999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +166,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &3843111928163311730
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
