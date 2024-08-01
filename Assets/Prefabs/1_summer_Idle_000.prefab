@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3942231057714018734}
   - component: {fileID: 1564182279478864659}
   - component: {fileID: 5369649905223741726}
+  - component: {fileID: 3662907808480090729}
+  - component: {fileID: 845211507763308196}
   m_Layer: 0
   m_Name: 01
   m_TagString: Untagged
@@ -106,6 +108,57 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3662907808480090729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063232109026297397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b74fec7b82adf448f1f26738246d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CantAttack: 0
+  AttackSpeed: 0.3
+  AttackRenge: 2
+  Attack: 2
+--- !u!70 &845211507763308196
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063232109026297397}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.09, y: 0.33}
+  m_Direction: 0
 --- !u!1 &7125415378437673556
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +173,6 @@ GameObject:
   - component: {fileID: 8848680798354439559}
   - component: {fileID: -8841166041367596760}
   - component: {fileID: -6712574583654585576}
-  - component: {fileID: 3570555381236655122}
   - component: {fileID: 1298037682142539593}
   m_Layer: 0
   m_Name: 1_summer_Idle_000
@@ -298,21 +350,6 @@ MonoBehaviour:
   Isdie: 0
   walkSpeed: 5
   runSpeed: 6
---- !u!114 &3570555381236655122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7125415378437673556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b74fec7b82adf448f1f26738246d69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CantAttack: 0
-  AttackSpeed: 0.3
-  Attack: 1.5
 --- !u!114 &1298037682142539593
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -65,7 +65,9 @@ public class EnemyStatus : MonoBehaviour
         //hasar alma
         if(Ishurt){
             _anim.SetBool("Ishurt",true);
+            StartCoroutine(DelayAttack());
             Ishurt = false;
+            
         }
         else{
            _anim.SetBool("Ishurt",false); 
@@ -80,5 +82,10 @@ public class EnemyStatus : MonoBehaviour
         }
         Ishurt = true;
     }
-
+    private IEnumerator DelayAttack()
+    {
+        Path.canMove=false;
+        yield return new WaitForSeconds(1);
+        Path.canMove=true;
+    }
 }

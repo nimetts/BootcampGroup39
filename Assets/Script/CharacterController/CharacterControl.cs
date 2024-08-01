@@ -57,5 +57,15 @@ public class CharacterControl : MonoBehaviour
         {
             _animator.SetInteger("Ismove",0);
         }
+        if(status.Ishit){
+            _animator.SetBool("Ishit",true);
+            status.Ishit= false;
+        }
+        else{
+             _animator.SetBool("Ishit",false);
+        }
+        if(status.Isdie){
+            _animator.SetBool("Isdie",true);
+        }
     }
 }

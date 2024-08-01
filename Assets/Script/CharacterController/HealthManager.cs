@@ -22,7 +22,7 @@ public class HealthManager : MonoBehaviour
         Ishit=true;
         if (currentHealth <= 0)
         {
-            Ishit=true;
+            Isdie=true;
             Die();
         }
     }
