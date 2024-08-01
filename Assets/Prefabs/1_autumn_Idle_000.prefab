@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2884480849775196999}
   - component: {fileID: 8277167046941461966}
   - component: {fileID: 3843111928163311730}
+  - component: {fileID: 3889970565041388095}
   m_Layer: 0
   m_Name: 1_autumn_Idle_000
   m_TagString: Player
@@ -202,3 +203,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.4425, y: 2.05}
   m_Direction: 0
+--- !u!114 &3889970565041388095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4894251677589259189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a0073c0869c0b4a83abe9a4e3e3aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
