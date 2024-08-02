@@ -86,6 +86,17 @@ Her bir takım üyesinin sahnelerdeki eksiklikleri tamamlamasına karar verilmi�
 * Oyun içi müzikler son sprite bırakılmasına karar verildi.
 * Karakter ve düşman animasyonlarının üzerine daha çok yoğunlaşılması gerektiğine karar verildi.
 
+# SPRINT 3
+*Sprint içi puan değerlendirmesi 100 olarak belirlenmiştir.
+* **Puanlama:** Üçüncü sprint için hedeflenen tamamlanacak puan sayısı 100 olup, bu hedef başarıyla gerçekleştirilmiştir.
+* **Daily Scrum:** Görüşmeler, Whatsapp ve Discord üzerinden yapılmıştır.
+## Sprint Board Update
+https://imgur.com/a/FVkIU8A
+## Toplantı ve Whatsapp ScreenShotları
+https://imgur.com/a/lQYwdXp
+## Oyundan sahneler
+https://imgur.com/a/KLEUEqj
+
 
 
   
