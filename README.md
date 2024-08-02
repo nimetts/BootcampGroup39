@@ -96,6 +96,13 @@ https://imgur.com/a/FVkIU8A
 https://imgur.com/a/lQYwdXp
 ## Oyundan sahneler
 https://imgur.com/a/KLEUEqj
+## Sprint Review
+* Scrum sürecinde takım ruhunu koruyup özveriyle çalıştıkları için takım üyeleri birbirini kutladı.
+* Ana menü, kazanma ve kaybetme ekranları yapılıp oyundaki bazı buglar düzeltilmiştir.
+## Sprint Retrospectives
+* Gelecek projelerde de herhangi bir ihtiyaç durumunda iletişime geçilebileceğine dair konuşma yapıldı.
+* Gelecek projelerde takım üyelerinin daha fazla katılım göstermeleri gerektiği belirtilmiştir.
+
 
 
 
