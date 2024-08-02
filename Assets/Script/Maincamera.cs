@@ -5,8 +5,6 @@ using UnityEngine;
 public class Maincamera : MonoBehaviour
 {
     private GameObject tr;
-    private GameObject camera;
-
     void Start()
     {
         tr = GameObject.FindWithTag("Player");

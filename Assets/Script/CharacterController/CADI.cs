@@ -43,6 +43,5 @@ public class CADI : MonoBehaviour
         CantAttack = false;
         _anim.SetBool("Isattack",false);
     }
-
 }
 

@@ -174,7 +174,6 @@ GameObject:
   - component: {fileID: -8841166041367596760}
   - component: {fileID: -6712574583654585576}
   - component: {fileID: 1298037682142539593}
-  - component: {fileID: -6105101326596890425}
   m_Layer: 0
   m_Name: 1_summer_Idle_000
   m_TagString: Player
@@ -345,12 +344,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c163ae1cc5c580d49a276ebc48d5063b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 15
   currentHealth: 0
   Ishit: 0
   Isdie: 0
-  walkSpeed: 5
-  runSpeed: 6
+  helthBar: {fileID: 0}
+  walkSpeed: 6
+  runSpeed: 7
 --- !u!114 &1298037682142539593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,17 +361,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5d450cca74e6d24393aa7fc43fb544d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-6105101326596890425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7125415378437673556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a0073c0869c0b4a83abe9a4e3e3aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
