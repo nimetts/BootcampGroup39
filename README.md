@@ -88,7 +88,7 @@ Her bir takım üyesinin sahnelerdeki eksiklikleri tamamlamasına karar verilmi�
 
 # SPRINT 3
 *Sprint içi puan değerlendirmesi 100 olarak belirlenmiştir.
-* **Puanlama:** Üçüncü sprint için hedeflenen tamamlanacak puan sayısı 100 olup, bu hedef başarıyla gerçekleştirilmiştir. Bütün sprint için gereken puan 300dür ve bu doğrultuda eksiksiz tamamlanmıştır.
+* **Puanlama:** Bu sprint, önceki sprintlerde planlanan ve uygulanmaya başlanan sistemi tamamladığımız son sprint oldu. Önemli özelliklerin çoğunu da bu sprintte tamamladığımız için 100 puan daha ekleyerek sprint puanımız toplamda 300'e ulaştı.
 * **Daily Scrum:** Görüşmeler, Whatsapp ve Discord üzerinden yapılmıştır.
 ## Sprint Board Update
 https://imgur.com/a/FVkIU8A
