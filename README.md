@@ -88,7 +88,7 @@ Her bir takım üyesinin sahnelerdeki eksiklikleri tamamlamasına karar verilmi�
 
 # SPRINT 3
 *Sprint içi puan değerlendirmesi 100 olarak belirlenmiştir.
-* **Puanlama:** Üçüncü sprint için hedeflenen tamamlanacak puan sayısı 100 olup, bu hedef başarıyla gerçekleştirilmiştir.
+* **Puanlama:** Üçüncü sprint için hedeflenen tamamlanacak puan sayısı 100 olup, bu hedef başarıyla gerçekleştirilmiştir. Bütün sprint için gereken puan 300dür ve bu doğrultuda eksiksiz tamamlanmıştır.
 * **Daily Scrum:** Görüşmeler, Whatsapp ve Discord üzerinden yapılmıştır.
 ## Sprint Board Update
 https://imgur.com/a/FVkIU8A
@@ -102,7 +102,11 @@ https://imgur.com/a/KLEUEqj
 ## Sprint Retrospectives
 * Gelecek projelerde de herhangi bir ihtiyaç durumunda iletişime geçilebileceğine dair konuşma yapıldı.
 * Gelecek projelerde takım üyelerinin daha fazla katılım göstermeleri gerektiği belirtilmiştir.
-
+## Sprint Notları
+* Son sprintten kalan müzikler eksiksiz tamamlanılmıştır.
+* Oyun içindeki düşmanlar ve karakterlerin animasyonları en iyi seviyeye getirilmiştir.
+* Ana karakterlere kendilerini savunmaları için ekipmanlar eklenmiştir.
+* Oyunun ana menüsü için paralax yöntemi kullanıp, ilgi çekici bir menü tasarlanmıştır.
 
 
 
